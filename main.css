@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+.h2_2{
+    padding-left: 300px;
+}
+.p_1{
+    padding-right: 400px;
+}
+.family{
+    position: absolute;
+    padding-left: 1000px;
+    top: 10px;
+}
+.h1,.h2_1{
+
+    padding-top: 15px;
+    padding-left:528px ;
+    padding-right: 528px;
+}
+.h2_1{
+    height: 40px;
+    width: 300px;
+    padding-left: 480px;
+
+}
+.href-1{
+   justify-content: space-between;
+}
+.href{
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+    padding: 40px 49px  40px 48px;
+}
+.photo{
+    width: 350px;
+    height: 200px;
+}
+.str{
+    margin-left: 250px;
+    margin-right:150px;
+    margin-top: 40px;
+}
+.bart_pho{
+    width: 400px;
+    height: 200px;
+    padding-left:550px ;
+    position: absolute;
+}
+.h3_1{
+    padding-left:550px;
+    padding-top: 45px;
+
+}
+.ul_1{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.pa-le-ba{
+    padding-left: 590px;
+    padding-top: 29px;
+}
+.div-sex-ba{
+    background: aquamarine;
+    width: 60px;
+    height: 15px;
+    margin-left:650px ;
+    position: absolute;
+   color: black;
+}
+.sex-ba{
+    padding-left: 590px;
+}
+.div-age-ba{
+    top: 360px;
+    height: 15px;
+
+}
+.h4_1{
+    padding-left: 400px;
+    padding-top: 12px;
+}
+.bart-sim{
+    padding-left: 450px;
+   top: 60px;
+}
+.homer_pho_1{
+    width: 350px;
+    height: 250px;
+}
+.lisa_pho_1{
+    width: 300px;
+}
