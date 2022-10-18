@@ -1,0 +1,46 @@
+.box{
+    height:300px ;
+    background: silver;
+    margin: 10px;
+    color: azure;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h-2{
+    margin: 0;
+}
+.head-box1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.additional-1{
+    margin: 10px;
+    width: 350px;
+    height: 250px;
+    background: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.h3{
+    color: azure;
+    font-family: "Agency FB";
+}
+.head-box2{
+    background: silver;
+    height: 450px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    color: azure;
+    font-family: "Agency FB";
+    font-size: 40px;
+
+}
