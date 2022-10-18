@@ -1,0 +1,39 @@
+.head-box{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 70px;
+    height: 550px;
+    background: silver;
+}
+.box{
+
+    height: 400px;
+    width: 350px;
+    border: 1px solid black;
+margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: floralwhite;
+}
+.add-h2{
+    margin-left: 70px;
+    margin-top: 80px;
+}
+.add-p{
+    padding: 40px;
+    font-family: "Agency FB";
+}
+.but{
+    border: 1px solid black;
+    height: 30px;
+    width: 170px;
+    margin-left: 87px;
+}
+.ler {
+    color: black;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 30px;
+    width: 170px;
+}
