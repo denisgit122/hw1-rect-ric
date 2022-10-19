@@ -45,6 +45,7 @@
     height: 40px;
     border: 1px solid black;
     background: floralwhite;
+    border-radius: 22px;
 }
 .fa-sharp{
     font-size: 30px;
@@ -61,7 +62,9 @@
     height: 40px;
     bottom: 480px;
     left: 508px;
+    border-radius: 22px;
 }
 .sharp3{
     left: 860px;
+    border-radius: 22px;
 }
