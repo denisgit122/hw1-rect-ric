@@ -1,0 +1,20 @@
+.box{
+    background: silver;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 300px;
+    align-items: flex-end;
+    margin-top: 100px;
+
+
+}
+.boxs{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: black;
+    bottom: -75px;
+    border-radius: 22px;
+}
