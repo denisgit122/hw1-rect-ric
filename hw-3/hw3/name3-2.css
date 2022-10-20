@@ -1,7 +1,7 @@
 .box{
     background: silver;
     width: 700px;
-    height: 400px;
+    height: 1000px;
     display: flex;
     justify-content: space-around;
     margin-left: 300px;
@@ -15,4 +15,19 @@
     background: black;
     bottom: -75px;
     border-radius: 22px;
+}
+.menu{
+ height: 100px;
+    width: 700px;
+    position:fixed;
+    background: blueviolet;
+   bottom: 440px;
+}
+input{
+    margin-left: 180px;
+    margin-top: 40px;
+    width: 350px;
+}
+.fa-solid{
+    padding-left: 7px;
 }
