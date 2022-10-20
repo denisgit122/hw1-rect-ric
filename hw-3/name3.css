@@ -1,3 +1,6 @@
+body{
+    box-sizing: border-box;
+}
 .head-box{
     display: flex;
     justify-content: space-between;
@@ -39,8 +42,8 @@
 }
 .sharp{
     position: absolute;
-    bottom: 480px;
-    left: 160px;
+margin-left: 130px;
+    top: 140px;
     width: 60px;
     height: 40px;
     border: 1px solid black;
@@ -55,17 +58,17 @@
     padding-top: 5px;
 
 }
-.sharp2{
+ .sharp2{
     position: absolute;
     border: 1px solid black;
     background: floralwhite;
     width: 60px;
     height: 40px;
-    bottom: 480px;
-    left: 508px;
+     margin-left: 130px;
+     top: 140px;
     border-radius: 22px;
 }
 .sharp3{
-    left: 860px;
+
     border-radius: 22px;
 }
