@@ -1,11 +1,12 @@
 .size{
-    width:1350px;
+    width:1349px;
     height: 1126px;
 }
 @media screen and (min-width: 0) and (max-width: 972px){
    .size{
-       width:972px;
        height: 1100px;
+       width: auto;
+
    }
 }
 .box-1{
@@ -89,10 +90,11 @@
 @media screen and (min-width: 0) and (max-width: 972px){
     .ad{
         position: relative;
-        width: 300px;
+        width: 260px;
         height: 200px;
         margin-left:710px;
         margin-top: -200px;
+
     }
 }
 .box-3{
