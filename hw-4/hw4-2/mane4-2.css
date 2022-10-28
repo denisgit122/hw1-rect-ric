@@ -1,3 +1,14 @@
+.size {
+    width: 1349px;
+    height: 506px;
+}
+
+@media screen and (min-width: 0) and (max-width: 972px){
+    .size{
+        height: 600px;
+        width: auto;
+    }
+}
 .head{
     background: silver;
     height: 100px;
