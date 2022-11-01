@@ -38,7 +38,7 @@ let c='істина';
 console.log(typeof c)
 
 
-var person
+
 if(confirm('hello')){
     person=prompt('Hi what`s your name?')
     surname2=prompt(' what`s your surname?')
