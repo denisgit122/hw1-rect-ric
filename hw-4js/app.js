@@ -40,10 +40,14 @@ console.log(typeof c)
 
 
 if(confirm('hello')){
-    person=prompt('Hi what`s your name?')
-    surname2=prompt(' what`s your surname?')
-    age2=prompt(' how old are you?')
-    alert('hello,' + person  +' '+ surname2  +' '+ age2)
+   let person=prompt('Hi what`s your name?')
+    console.log(name)
+    let surname2=prompt(' what`s your surname?')
+    console.log(surname)
+     const age2 = prompt( "how old are you?")
+     age=17
+    console.log(typeof age, age)
+    //alert('hello,' + person  +' '+ surname2  +' '+ age )
 }
 
 // else
