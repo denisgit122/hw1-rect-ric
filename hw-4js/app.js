@@ -45,7 +45,7 @@ if(confirm('hello')){
     let surname2=prompt(' what`s your surname?')
     console.log(surname2)
      const age2 =+ prompt( "how old are you?")
-     age=17
+
     console.log(typeof age2, age2)
     //alert('hello,' + person  +' '+ surname2  +' '+ age2 )
 }
