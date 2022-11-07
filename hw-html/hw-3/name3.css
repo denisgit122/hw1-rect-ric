@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+}
+.head-box{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 70px;
+    height: 550px;
+    background: silver;
+}
+.box{
+
+    height: 400px;
+    width: 350px;
+    border: 1px solid black;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: floralwhite;
+}
+.add-h2{
+    margin-left: 70px;
+    margin-top: 80px;
+}
+.add-p{
+    padding: 40px;
+    font-family: "Agency FB";
+}
+.but{
+    border: 1px solid black;
+    height: 30px;
+    width: 170px;
+    margin-left: 87px;
+}
+.ler {
+    color: black;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 30px;
+    width: 170px;
+}
+.sharp {
+    position: absolute;
+    margin-left: 130px;
+            top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    width: 60px;
+    height: 40px;
+    border: 1px solid black;
+    background: floralwhite;
+    border-radius: 22px;
+}
+
+.fa-sharp{
+    font-size: 30px;
+  /*  padding-left: 19px;
+    padding-bottom: 5px;
+    padding-top: 5px;*/
+
+}
+.xxx{
+    width: 400px;
+}
+
+ .sharp2{
+    position: absolute;
+    border: 1px solid black;
+    background: floralwhite;
+    width: 60px;
+    height: 40px;
+     margin-left: 130px;
+     top: 140px;
+    border-radius: 22px;
+     display: flex;
+     justify-content: center;
+     align-items: center
+}
+
