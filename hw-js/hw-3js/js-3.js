@@ -101,7 +101,8 @@ let min=prompt('min')
 
 //  6. - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 // за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
-let y = +prompt() || "default"
-console.log(y)
-
+let y = prompt()
+if (+y == 0 || y=="" || y=='NaN' || y=='null' || y=='undefined' || y=='false'){
+console.log(  "default")
+}else console.log(y)
 
