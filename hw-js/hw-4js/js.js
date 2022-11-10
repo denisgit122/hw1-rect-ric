@@ -1,47 +1,59 @@
 //- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 let users = [
-    {}
+    {name: 'vasya'},
+    {name: 'petya'},
+    {name: 'kolya'},
+    {name: 'olya'},
+    {name: 'max'},
+    {name: 'anya'},
+    {name: 'oleg',},
+    {name: 'andrey'},
+    {name: 'masha'},
+    {name: 'olya'},
+    {name: 'max'}
+
     ]
-for (let i = 0; i < users.length; i++) {
-    document.write(`
-    <div>1</div>
-    <div></div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
+for (let j = 0; j < users.length; j++) {
+	const user1 = users[j];
+
+
+
+	document.write(`
+    <div>${user1.name}</div>
     
     `)
-    const user = users[i];
 
 }
 
 
 
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-let user = [
-    {}
-]
-for (let i = 0; i < user.length; i++) {
-    document.write(`
-    <div>1, index:1</div>
-    <div>2 index:2</div>
-    <div>3 index:3</div>
-    <div>4 index:4</div>
-    <div>5 index:5</div>
-    <div>6 index:6</div>
-    <div>7 index:7</div>
-    <div>8 index:8</div>
-    <div>9 index:9</div>
-    <div>10 index:10</div>
-    `)
-    const user = users[i];
 
+
+let users20 = [
+	{name: 'vasya', nam: 1},
+	{name: 'petya', nam:2},
+	{name: 'kolya', nam:3},
+	{name: 'olya', nam:4},
+	{name: 'max', nam:5},
+	{name: 'anya', nam:6},
+	{name: 'oleg', nam:7},
+	{name: 'andrey', nam:8},
+	{name: 'masha', nam:9},
+	{name: 'olya', nam:10},
+
+
+]
+for (let j = 0; j < users20.length; j++) {
+	const users20Element = users20[j];
+
+
+	document.write(`
+	<div>${users20Element.name} ${users20Element.nam}</div>
+	
+	`)
 }
+
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
 
@@ -50,25 +62,10 @@ let users9 = [
 
 ];
 let i = 0;
-while (i < users9.length){
+while (i < 10){
 	document.write(`
 	<h1>1</h1>
-	<h1>2</h1>
-	<h1>3</h1>
-	<h1>4</h1>
-	<h1>5</h1>
-	<h1>6</h1>
-	<h1>7</h1>
-	<h1>8</h1>
-	<h1>9</h1>
-	<h1>9</h1>
-	<h1>10</h1>
-	<h1>11</h1>
-	<h1>12</h1>
-	<h1>13</h1>
-	<h1>14</h1>
-	<h1>15</h1>
-	<h1>16</h1>
+
 
 `)
 	//console.log( users9[i])
@@ -82,25 +79,10 @@ let users8 = [
 
 ];
 let p = 0;
-while (p < users8.length){
+while (p <10){
 	document.write(`
-	<h1>1 id-1</h1>
-	<h1>2 id-2</h1>
-	<h1>3 id-2</h1>
-	<h1>4 id-2</h1>
-	<h1>5 id-2</h1>
-	<h1>6 id-2</h1>
-	<h1>7 id-2</h1>
-	<h1>8 id-2</h1>
-	<h1>9 id-2</h1>
-	<h1>9 id-2</h1>
-	<h1>10 id-2</h1>
-	<h1>11 id-2</h1>
-	<h1>12 id-2</h1>
-	<h1>13 id-2</h1>
-	<h1>14 id-2</h1>
-	<h1>15 id-2</h1>
-	<h1>16 id-2</h1>
+	<h1>1, ${p}</h1>
+	
 
 `)
 	//console.log( users9[i])
@@ -126,20 +108,15 @@ while (p < users8.length){
 // 
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-for (let i = 7; i < listOfItems.length; i++) {
-    const listOfItem = listOfItems[i];
+for (let j = 0; j < listOfItems.length; j++) {
+    const listOfItem = listOfItems[j];
+
 
 
     document.write(`
     <ul>
-   <li>'html'</li>
-   <li>'css'</li>
-   <li>javascript</li>
-   <li>mysql</li>
-   <li>mongodb</li>
-   <li>react</li>
-   <li>angular</li>
-   <li>node.js</li>
+   <li>${listOfItem}</li>
+   
    
 
 </ul>
