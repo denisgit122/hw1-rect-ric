@@ -493,8 +493,8 @@ document.write(`<div class="head">`)
 for (const usersListElement of users) {
     document.write(`
 <div class='we'> 
-<h2 class="h2">${usersListElement.id} ${usersListElement.name}
-         ${usersListElement.username} </h2>
+<div class="name"> <h2 class="h2">${usersListElement.id} ${usersListElement.name}
+         ${usersListElement.username} </h2></div>
 <h3 class="h3">${usersListElement.email} <span class="span"> ${usersListElement.phone}</span></h3>
 
 <div class="address"> 

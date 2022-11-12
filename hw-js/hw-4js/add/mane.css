@@ -15,6 +15,10 @@
     justify-content: space-around;
 
 }
+.name{
+    width: 150px;
+    height: 2px;
+}
 .h2{
     border: 1px solid black;
     position: absolute;
@@ -31,7 +35,8 @@
 .address{
     border: 1px solid red;
     margin: 10px;
-
+width: 560px;
+    height: 60px;
     padding-left: 20px;
 }
 .span1{
@@ -42,6 +47,7 @@
 .ad{
     border-style: dashed;
     margin: 10px;
+    width: 576px;
 
 }
 .span2{
