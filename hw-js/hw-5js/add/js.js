@@ -227,21 +227,130 @@
 // - Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 //   EXAMPLE:
 //   [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
-let arr=[{name: 'Dima', age: 13}, {model: 'Camry'}]
-function name (array) {
-    let ne=[]
-    for (let i = 0,j=0; i < arr.length; i++) {
-        for (let key in arr[i]) {
-            ne [j++]=array[i][key]
-        }
+// let arr=[{name: 'Dima', age: 13}, {model: 'Camry'}]
+// function name (array) {
+//     let ne=[]
+//     for (let i = 0,j=0; i < arr.length; i++) {
+//         for (let key in arr[i]) {
+//             ne [j++]=array[i][key]
+//         }
+//
+//     }console.log(ne)
+// }
+// name(arr)
 
-    }console.log(ne)
+
+
+
+
+
+
+
+
+//
+// Всі функції повинні бути описані стрілочним типом!!!!
+//     - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+// let foo = (a,b,c)=>{
+//     if (a>b && b>c){
+//         console.log(a)
+//     }else  if (a<b && b>c ){
+//         console.log(b)
+//     }else if (c>b&& c>a){
+//         console.log(c)
+//     }
+// }
+// foo(2,40,6)
+// - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+
+// let foo = (a,b,c)=>{
+//     if (a>b && b<c){
+//         console.log(b)
+//     }else  if (a<b && a<c ){
+//         console.log(a)
+//     }else if (c<b&& c<a){
+//         console.log(c)
+//     }
+// }
+// foo(200,40,60)
+
+// - створити функцію яка повертає найбільше число з масиву
+// let num1=[1,2,3]
+// let add = (a)=>{
+//     let num=num1[0]
+//     for (const addElement of a) {
+//         if (addElement>num){
+//             num=addElement
+//         }
+//     }return num
+// }
+// let res=add(num1)
+// console.log(res)
+// - створити функцію яка повертає найменьше число з масиву
+// let num1=[1,2,3]
+// let add = (a)=>{
+//     let num=num1[0]
+//     for (const addElement of a) {
+//         if (addElement<num){
+//             num=addElement
+//         }
+//     }return num
+// }
+// let res=add(num1)
+// console.log(res)
+
+
+// Дано натуральное число n. Выведите все числа от 1 до n.
+
+// function name(arr) {
+//     for (let i = 1; i <= arr; i++) {
+//         const arrElement = arr[i];
+// console.log(i)
+//     }
+// }
+// let res=name(9)
+
+
+// Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или
+// в порядке убывания в противном случае.
+
+// function name(a,b) {
+//     if (a>b){
+//         for (let i = b; i <= a; i++) {
+//             console.log(i)
+//         }
+//     }else if (a<b){
+//         for (let i = a; i <= b; i++) {
+//             console.log(i)
+//
+//         }
+//     }
+
+ // }name(10,19)
+
+
+// let res= (a,b)=> {
+//     if (a>b){
+//         for (let i = b; i <= a; i++) {
+//             console.log(i)
+//         }
+//     }else if (a<b){
+//         for (let i = a; i <= b; i++) {
+//             console.log(i)
+//
+//         }
+//     }
+// }
+// res(10,19)
+
+
+//-   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+//   EXAMPLE:
+//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+
+let str='word'
+for (let i = 0; i < str.length; i++) {
+    const strElement = str[i];
+    console.log(strElement)
 }
-name(arr)
-
-
-
-
-
-
-
