@@ -39,6 +39,7 @@
 let str = ' dirty string   '
 let res=str.replace(' ','')
 console.log(str.substring(1, 13));
+console.log(str.trim());
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 // let str = 'Ревуть воли як ясла повні';
@@ -48,6 +49,8 @@ console.log(str.substring(1, 13));
 //
 //
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+let arr= [10,8,-7,55,987,-1011,0,1050,0]
+console.log(arr.map(value => value.toString()));
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в
 // залежності від значення аргументу direction.
 // let nums = [11,21,3];
@@ -159,12 +162,7 @@ let deck = [
 //     clubs:[]
 // }
 
-// deck.reduce((arr, cards) =>{
-//     if (cards.cardSuit=="Spade"){
-//         arr.spades.push(cards)
-//     }
-// },{  spades:[],
-//     } )
+
 
 // console.log(deck.reduce((arr, cards) => {
 //     if (cards.cardSuit === "Spade") {
