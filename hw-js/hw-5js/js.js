@@ -69,6 +69,16 @@
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
+function arr(array) {
+    document.write(`<ul>` )
+    document.write(`<li>${array[0]}</li>`)
+    document.write(`<li>${array[1]}</li>`)
+    document.write(`<li>${array[2]}</li>`)
+    document.write(`</ul>` )
+}
+arr([111,'word', false])
+arr([111,'word', false])
+
 // function arr(num,str,bool) {
 //     document.write(`<ul>` )
 //     document.write(`<li>${num}</li>`)
@@ -80,6 +90,19 @@
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
+// function arr(array) {
+//     document.write(`<div>`)
+//     document.write(`<h2>id-${array[0]}</h2>`)
+//     document.write(`</div>`)
+//     document.write(`<div>`)
+//     document.write(`<h2> name-${array[1]}</h2>`)
+//     document.write(`</div>`)
+//     document.write(`<div>`)
+//     document.write(`<h2>Age${array[2]}</h2>`)
+//     document.write(`</div>`)
+// }
+// arr([1,'anna',22])
+// arr([2,'wewqw',20])
 
 // function arr(id,name,age) {
 //     document.write(`<div>`)
@@ -120,10 +143,13 @@
 
 // ..- створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
-// function arr(nam) {
+// let num1=[10,3,6]
+// function foo(array) {
+//     let num=0
+//     for (let i = 0; i < array.length; i++) {
+//         num+=array[i]
 //
-//        let res= nam[0]+nam[1]+nam[2]
-//     return res
-// }
-// let res =arr([1,2,10])
+//     }return num
+// }let res=foo(num1)
 // console.log(res)
+
