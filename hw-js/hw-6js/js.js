@@ -30,14 +30,14 @@
 // let str1='HELLO WORLD'
 // console.log(str1.toLowerCase());
 // let str2='LOREM IPSUM'
-// console.log(str2.toLowerCase());
+// console.log(str2.toLowerCase());l
 // let str3='JAVASCRIPT IS COOL'
 // console.log(str3.toLowerCase());
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
 let str = ' dirty string   '
-let res=str.replace(' ','')
+let res = str.replace(' ', '')
 console.log(str.substring(1, 13));
 console.log(str.trim());
 
@@ -49,7 +49,7 @@ console.log(str.trim());
 //
 //
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
-let arr= [10,8,-7,55,987,-1011,0,1050,0]
+let arr = [10, 8, -7, 55, 987, -1011, 0, 1050, 0]
 console.log(arr.map(value => value.toString()));
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в
 // залежності від значення аргументу direction.
@@ -91,42 +91,42 @@ console.log(arr.map(value => value.toString()));
 
 //  описати колоду карт
 let deck = [
-    {cardSuit:'Spade', value: 6, color:'Black'},
-    {cardSuit:'Clubs', value: 6, color:'Black'},
-    {cardSuit:'Hearts', value: 6, color:'Red'},
-    {cardSuit:'Diamonds', value: 6, color:'Red'},
-    {cardSuit:'Spade', value: 7, color:'Black'},
-    {cardSuit:'Clubs', value: 7, color:'Black'},
-    {cardSuit:'Hearts', value: 7, color:'Red'},
-    {cardSuit:'Diamonds', value: 7, color:'Red'},
-    {cardSuit:'Spade', value: 8, color:'Black'},
-    {cardSuit:'Clubs', value: 8, color:'Black'},
-    {cardSuit:'Hearts', value: 8, color:'Red'},
-    {cardSuit:'Diamonds', value: 8, color:'Red'},
-    {cardSuit:'Spade', value: 9, color:'Black'},
-    {cardSuit:'Clubs', value: 9, color:'Black'},
-    {cardSuit:'Hearts', value: 9, color:'Red'},
-    {cardSuit:'Diamonds', value: 9, color:'Red'},
-    {cardSuit:'Spade', value: 10, color:'Black'},
-    {cardSuit:'Clubs', value: 10, color:'Black'},
-    {cardSuit:'Hearts', value: 10, color:'Red'},
-    {cardSuit:'Diamonds', value: 10, color:'Red'},
-    {cardSuit:'Spade', value: 'Jack', color:'Black'},
-    {cardSuit:'Clubs', value: 'Jack', color:'Black'},
-    {cardSuit:'Hearts', value: 'Jack', color:'Red'},
-    {cardSuit:'Diamonds', value: 'Jack', color:'Red'},
-    {cardSuit:'Spade', value: 'Queen', color:'Black'},
-    {cardSuit:'Clubs', value: 'Queen', color:'Black'},
-    {cardSuit:'Hearts', value: 'Queen', color:'Red'},
-    {cardSuit:'Diamonds', value: 'Queen', color:'Red'},
-    {cardSuit:'Spade', value: 'King', color:'Black'},
-    {cardSuit:'Clubs', value: 'King', color:'Black'},
-    {cardSuit:'Hearts', value: 'King', color:'Red'},
-    {cardSuit:'Diamonds', value: 'King', color:'Red'},
-    {cardSuit:'Spade', value: 'Ace', color:'Black'},
-    {cardSuit:'Clubs', value: 'Ace', color:'Black'},
-    {cardSuit:'Hearts', value: 'Ace', color:'Red'},
-    {cardSuit:'Diamonds', value: 'Ace', color:'Red'}
+    {cardSuit: 'Spade', value: 6, color: 'Black'},
+    {cardSuit: 'Clubs', value: 6, color: 'Black'},
+    {cardSuit: 'Hearts', value: 6, color: 'Red'},
+    {cardSuit: 'Diamonds', value: 6, color: 'Red'},
+    {cardSuit: 'Spade', value: 7, color: 'Black'},
+    {cardSuit: 'Clubs', value: 7, color: 'Black'},
+    {cardSuit: 'Hearts', value: 7, color: 'Red'},
+    {cardSuit: 'Diamonds', value: 7, color: 'Red'},
+    {cardSuit: 'Spade', value: 8, color: 'Black'},
+    {cardSuit: 'Clubs', value: 8, color: 'Black'},
+    {cardSuit: 'Hearts', value: 8, color: 'Red'},
+    {cardSuit: 'Diamonds', value: 8, color: 'Red'},
+    {cardSuit: 'Spade', value: 9, color: 'Black'},
+    {cardSuit: 'Clubs', value: 9, color: 'Black'},
+    {cardSuit: 'Hearts', value: 9, color: 'Red'},
+    {cardSuit: 'Diamonds', value: 9, color: 'Red'},
+    {cardSuit: 'Spade', value: 10, color: 'Black'},
+    {cardSuit: 'Clubs', value: 10, color: 'Black'},
+    {cardSuit: 'Hearts', value: 10, color: 'Red'},
+    {cardSuit: 'Diamonds', value: 10, color: 'Red'},
+    {cardSuit: 'Spade', value: 'Jack', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'Jack', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'Jack', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'Jack', color: 'Red'},
+    {cardSuit: 'Spade', value: 'Queen', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'Queen', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'Queen', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'Queen', color: 'Red'},
+    {cardSuit: 'Spade', value: 'King', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'King', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'King', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'King', color: 'Red'},
+    {cardSuit: 'Spade', value: 'Ace', color: 'Black'},
+    {cardSuit: 'Clubs', value: 'Ace', color: 'Black'},
+    {cardSuit: 'Hearts', value: 'Ace', color: 'Red'},
+    {cardSuit: 'Diamonds', value: 'Ace', color: 'Red'}
 ];
 //  - знайти піковий туз
 // let filt=deck.filter(value => {
@@ -161,7 +161,6 @@ let deck = [
 //     hearts:[],
 //     clubs:[]
 // }
-
 
 
 // console.log(deck.reduce((arr, cards) => {
