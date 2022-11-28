@@ -213,8 +213,20 @@
 // - Напишіть функцію cutString(str, n), яка видаляє зайві слова з рядка str, залишивши у ній n слів.
 // let str = "Сила тяжести приложена к центру масс тела";
 // document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
-
-
+// let text = "Сила тяжести приложена к центру масс тела";
+// let num=5
+// function cutString(str, n) {
+//     let inc=[]
+//     let res=str.split(' ')
+//     for (const re of res) {
+//         if (res.splice(n)){
+//             inc.push(re)
+//         }
+//
+//     }return inc
+// }
+//
+// console.log(cutString(text, num));
 
 //-стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 // let boock=[
