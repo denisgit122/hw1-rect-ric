@@ -92,9 +92,19 @@
 // , наявність равлика, крапку яка знаходиться не меньше ніж на 2 символ далі після равлика, функція не чутлива до регістру
 // (some@email.com,SOME@EMAIL.COM,some@EMAIL.com, і тд - однакові значення)
 // Протестувати на значеннях
+function valid(email){
+    if (!email.split('').includes('@')){
+         throw new Error('dont have')
+    }else if ( email.startsWith('@')){
+        throw new Error('email begin whith @')
+    }else if (!email.includes('.',email.indexOf('@')+ 3)){
+        throw new Error('whith .')
+    }
 
-// someemail@gmail.com
-// someeMAIL@gmail.com
+    return email
+}
+console.log(valid('someeMAIL@gma.ilcom'));
+console.log(valid('someeMAIL@gmail.com'));
 // someeMAIL@i.ua
 // some.email@gmail.com
 
@@ -228,6 +238,8 @@
 //
 // console.log(cutString(text, num));
 
+
+
 //-стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 // let boock=[
 //     {
@@ -306,3 +318,29 @@
 // }   console.log(count)
 // - вісортувати книжки по кількості сторінок по зростанню
 //console.log(boock.sort((a, b) => a.page - b.page));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let text='sdsdsdsdsdsd'
+// let num=10
+// for (let i = 0; i < num; i++) {
+//     const textElement = text[i];
+//     document.write(`<ul>`)
+//     document.write( `<li>${text}</li>`)
+//     document.write(`</ul>`)
+//
+// }
+
+
+
+
