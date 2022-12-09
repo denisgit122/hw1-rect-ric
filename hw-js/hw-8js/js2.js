@@ -74,13 +74,13 @@
 
 // Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску,
 // максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
-function Car(model,producer,year,MaxSpeed,volume) {
-    this.model=model;
-    this.producer=producer;
-    this.year=year;
-    this.MaxSpeed=MaxSpeed;
-    this.volume=volume
-}
+// function Car(model,producer,year,MaxSpeed,volume) {
+//     this.model=model;
+//     this.producer=producer;
+//     this.year=year;
+//     this.MaxSpeed=MaxSpeed;
+//     this.volume=volume
+// }
 // function Castomer(model,producer,pas) {
 //     Car.apply(this.[model,producer])
 //     this.pas=pas
@@ -279,38 +279,38 @@ function Car(model,producer,year,MaxSpeed,volume) {
 
 
 
-        function Cinderella (name, age, size) {
-            this.name = name;
-            this.age = age;
-            this.size = size;
-        }
-
-
-
-        let arr=[
-            new Cinderella('anna', 20, 36),
-            new Cinderella('ala', 20, 35),
-            new Cinderella('vika', 20, 37)
-        ]
+        // function Cinderella (name, age, size) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.size = size;
+        // }
+        //
+        //
+        //
+        // let arr=[
+        //     new Cinderella('anna', 20, 36),
+        //     new Cinderella('ala', 20, 35),
+        //     new Cinderella('vika', 20, 37)
+        //]
 //console.log(arr);
 
-function Prince(name, age, size) {
-    this.name = name;
-    this.age = age;
-    this.size = size;
-}
-let prin=new Prince('vasya',23,37)
+// function Prince(name, age, size) {
+//     this.name = name;
+//     this.age = age;
+//     this.size = size;
+// }
+// let prin=new Prince('vasya',23,37)
 //console.log(prin);
 
-function res(arr,prin) {
-    for (const arrElement of arr) {
-        if (arrElement.size===prin.size){
-            return  `${arrElement.name}`
-        }
-    }
-}
-let res1=res(arr,prin)
-console.log(res1);
+// function res(arr,prin) {
+//     for (const arrElement of arr) {
+//         if (arrElement.size===prin.size){
+//             return  `${arrElement.name}`
+//         }
+//     }
+// }
+// let res1=res(arr,prin)
+// console.log(res1);
 
 
 
