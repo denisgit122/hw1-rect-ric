@@ -342,14 +342,7 @@
 
 //..............................................................
 
-//let div=document.queryCommandIndeterm('.target')
-document.forms.f1.login.oninput=function () {
-    let value=this.value;
-    if ( typeof value=="number"){
-        alert('num')
-    }
-    // let target=document.querySelector('.target')
-    // target.innerText=this.value
-}
+
+
 
 

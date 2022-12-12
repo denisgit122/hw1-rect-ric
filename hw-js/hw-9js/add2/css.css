@@ -1,0 +1,128 @@
+          /*2*/
+
+/*.div2{*/
+/*    width: 1300px;*/
+/*    height: 100px;*/
+/*    background: white;*/
+
+/*}*/
+/*.div{*/
+/*    left: -150%;*/
+/*    position: absolute;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    width: 800px;*/
+/*    border: 2px solid black;*/
+/*    height: 80px;*/
+/*}*/
+
+/*.active .div{*/
+/*    left: 10%;*/
+/*}*/
+
+/*                    !*3*!*/
+/*.headDiv{*/
+/*    height: 600px;*/
+/*    display: flex;*/
+/*    width: 1500px;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-around;*/
+
+/*}*/
+/*.div{*/
+/*    height: 200px;*/
+/*    width: 700px;*/
+/*    background:silver;*/
+/*}*/
+
+
+/*.div1{*/
+/*    margin: 10px;*/
+/*    width: 400px;*/
+/*    height: 180px;*/
+/*    margin-top: 10px;*/
+/*    border: 1px solid black;*/
+/*    position: relative;*/
+/*}*/
+/*.but{*/
+/*    height: 30px;*/
+/*    width: 200px;*/
+/*    position:absolute;*/
+/*    margin-top: 90px;*/
+/*    margin-left: 450px;*/
+/*}*/
+/*.p{*/
+/*    margin-left: 90px;*/
+/*    left: -300%;*/
+/*    position: absolute;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.active .p{*/
+/*    left: 0px;*/
+/*}*/
+
+/*.p2{*/
+/*    margin-left: 90px;*/
+/*    margin-top: 20px;*/
+/*    position: absolute;*/
+/*    left: -300%;*/
+/*}*/
+/*.active2 .p2{*/
+/*    left: 0;*/
+/*}*/
+
+/*.p3{*/
+/*    margin-left: 90px;*/
+/*    margin-top: 20px;*/
+/*    position: absolute;*/
+/*    left: -300%;*/
+/*}*/
+/*.active3 .p3{*/
+/*    left: 0;*/
+/*}*/
+
+
+
+                       /*4*/
+/*.active  .but{*/
+/*    left: -150%;*/
+
+/*}*/
+/*.div{*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*    border: 2px solid blue;*/
+/*}*/
+/* .but{*/
+/*    margin: 80px;*/
+/*     position: absolute;*/
+/*}*/
+
+             /*5*/
+/*.div{*/
+/*    width: 1400px;*/
+/*    height: 850px;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+/*.h2{*/
+/*    margin-left: 100px;*/
+/*}*/
+/*.box{*/
+/*    width: 600px;*/
+/*    height: 400px;*/
+/*    border: 1px solid black;*/
+
+/*}*/
+
+.inp{
+
+}
+.p{
+    font-size: 40px;
+    transition: all ease 1s;
+    font-style: italic;
+}
+
