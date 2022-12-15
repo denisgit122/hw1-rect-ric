@@ -22,88 +22,134 @@
         .then(posts => {
 
 
-            //4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
+                //4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
+                let boxhead = document.createElement('div')
+                boxhead.classList.add('boxhead')
+                document.body.append(boxhead)
 
-            let box=document.createElement('div')
-            box.classList.add('box')
-            document.body.append(box)
+                let box = document.createElement('div')
+                box.classList.add('box')
+                boxhead.append(box)
 
-            let div=document.createElement('div')
-            div.classList.add('div')
+                let div = document.createElement('div')
+                div.classList.add('div')
 
-            let id = document.createElement('h2');
-           id.innerText = `id-${posts.id}`
+                let id = document.createElement('h2');
+                id.innerText = `id-${posts.id}`
 
-            let name = document.createElement('h2');
-            name.classList.add('name')
-            name.innerText =`name-${posts.name};`
-            div.append(id,name)
+                let name = document.createElement('h2');
+                name.classList.add('name')
+                name.innerText = `name-${posts.name};`
+                div.append(id, name)
 
-            let info=document.createElement('div')
-            info.classList.add('info')
+                let info = document.createElement('div')
+                info.classList.add('info')
                 let username = document.createElement('h3');
                 username.classList.add('username')
-                username.innerText =`username- ${posts.username}`
-                let word=document.createElement('h3')
-                word.innerText='<-------infotmation------->'
-                let email=document.createElement('h3')
-                email.innerText=`email-${posts.email}`
-                info.append(username,word,email)
+                username.innerText = `username- ${posts.username}`
+                let word = document.createElement('h3')
+                word.innerText = '<-------infotmation------->'
+                let email = document.createElement('h3')
+                email.innerText = `email-${posts.email}`
+                info.append(username, word, email)
 
-            let divFlex=document.createElement('div')
-            divFlex.classList.add('divFlex')
-
-
-            let addres=document.createElement('div')
-            addres.classList.add('addres')
-
-                let wordAddres=document.createElement('h2')
-                wordAddres.innerText='addres: '
-
-                let street=document.createElement('h4')
-                 street.innerText=`street-${posts.address.street} `
+                let divFlex = document.createElement('div')
+                divFlex.classList.add('divFlex')
 
 
-                let suite=document.createElement('h4')
-                suite.innerText=`suite-${posts.address.suite} `
+                let addres = document.createElement('div')
+                addres.classList.add('addres')
 
-                let city=document.createElement('h4')
-                city.innerText=`street-${posts.address.city}`
+                let wordAddres = document.createElement('h2')
+                wordAddres.innerText = 'addres: '
 
-                let zipcode=document.createElement('h4')
-                zipcode.innerText=`street-${posts.address.zipcode}`
+                let street = document.createElement('h4')
+                street.innerText = `street-${posts.address.street}`
 
-            let geo=document.createElement('h3')
-            geo.innerText= `geo-lat${posts.address.geo.lat}  +' geo-lng${posts.address.geo.lng}`
-            addres.append(wordAddres,street,city,zipcode,geo)
 
-            let boxForPhone=document.createElement('div')
-            boxForPhone.classList.add('boxForPhone')
-            let phoneWebsite=document.createElement('h3')
-            phoneWebsite.innerText=`phone-${posts.phone} +''+ Website-${posts.website}`
-            boxForPhone.append(phoneWebsite)
+                let suite = document.createElement('h4')
+                suite.innerText = `suite-${posts.address.suite} `
 
-            let company=document.createElement('div')
-            company.classList.add('addres')
-                let companyName=document.createElement('h3')
-                companyName.innerText=`name-${posts.company.name}`
-                let companycatchPhrase=document.createElement('h3')
-                companycatchPhrase.innerText=`name-${posts.company.catchPhrase}`
-                let companybs=document.createElement('h3')
-                companybs.innerText=`name-${posts.company.bs}`
+                let city = document.createElement('h4')
+                city.innerText = `street-${posts.address.city}`
 
-            company.append(companyName,companycatchPhrase,companybs)
-            divFlex.append(addres,boxForPhone,company)
+                let zipcode = document.createElement('h4')
+                zipcode.innerText = `street-${posts.address.zipcode}`
 
-            box.append(div,info,divFlex);
+                let geo = document.createElement('h3')
+                geo.innerText = `geo-lat${posts.address.geo.lat}  +' geo-lng${posts.address.geo.lng}`
+                addres.append(wordAddres, street, city, zipcode, geo)
+
+                let boxForPhone = document.createElement('div')
+                boxForPhone.classList.add('boxForPhone')
+                let phoneWebsite = document.createElement('h3')
+                phoneWebsite.innerText = `phone-${posts.phone} +''+ Website-${posts.website}`
+                boxForPhone.append(phoneWebsite)
+
+                let company = document.createElement('div')
+                company.classList.add('addres')
+                let companyName = document.createElement('h3')
+                companyName.innerText = `name-${posts.company.name}`
+                let companycatchPhrase = document.createElement('h3')
+                companycatchPhrase.innerText = `name-${posts.company.catchPhrase}`
+                let companybs = document.createElement('h3')
+                companybs.innerText = `name-${posts.company.bs}`
+
+                company.append(companyName, companycatchPhrase, companybs)
+                divFlex.append(addres, boxForPhone, company)
+
+                box.append(div, info, divFlex, but, inp, divTitle, form);
 
         });
 
 
-
-
             // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
             // (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
+  let but=document.createElement('button')
+    but.classList.add('but')
+    but.innerText="post of current user"
+    let inp=document.createElement('input')
+    inp.classList.add('inp')
+    inp.type='checkbox'
+
+    let divTitle=document.createElement('div')
+
+    but.addEventListener('click',function () {
+
+        if (document.querySelector('.inp').checked) {
+            document.querySelector('.boxhead').classList.toggle('active')
+
+        fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+
+            .then(value => value.json())
+                .then(title => {
+
+
+                    for (const titleElement of title) {
+                        console.log(titleElement);
+                        let li=document.createElement('li')
+                        li.classList.add('li')
+                        li.innerText=`${titleElement.title}`
+                        divTitle.append(li)
+                    }
+                })
+        }else {
+            document.querySelector('.boxhead').classList.toggle('no')
+            divTitle.innerText=''}
+
+    })
+
+    let form=document.createElement('form')
+    form.action=`post-details.html`
+
+
+let butPost=document.createElement('button')
+    butPost.classList.add('butPost')
+    butPost.innerText='post-details'
+    form.appendChild(butPost)
+
+
+
             //     6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку
             //     post-details.html, котра має детальну інфу про поточний пост.
 
