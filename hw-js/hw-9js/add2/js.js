@@ -220,23 +220,62 @@
 
 ///////////////////////////5
 //- взять массив пользователей
-// let usersWithAddress = [
-// {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-// {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
-// {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
-// {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
-// {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
-// {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
-// {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
-// {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
-// {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
-// {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-// {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
-// ];
+let usersWithAddress = [
+{id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+{id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
+{id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+{id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
+{id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+{id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
+{id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
+{id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+{id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
+{id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+{id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
+];
 // // - Создать три чекбокса. Каждый из них активирует фильтр для вышеуказаного массива.
 // // Фильтры могут работать как вместе так и по отдельности.
 // // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
-//
+
+
+
+
+for (const usersWithAddress2 of usersWithAddress) {
+let val=`id-${usersWithAddress2.id},  name-${usersWithAddress2.name}, age-${usersWithAddress2.age}, status-${usersWithAddress2.status}, city-${usersWithAddress2.address.city}, street-${usersWithAddress2.address.street}, number-${usersWithAddress2.address.number}`
+    let doc=document.createElement('p')
+    doc.classList.add('doc')
+
+    doc.innerText=val
+//doc.innerText=`id-${usersWithAddress2.id},  name-${usersWithAddress2.name}, age-${usersWithAddress2.age}, status-${usersWithAddress2.status}, city-${usersWithAddress2.address.city}, street-${usersWithAddress2.address.street}, number-${usersWithAddress2.address.number}`
+document.body.append(doc)
+
+ console.log(usersWithAddress2)
+
+let check1=document.querySelector('.check')
+
+check1.onclick=function () {
+    console.log('res');
+d
+
+for (let i = 0; i < usersWithAddress.length; i++) {
+    const usersWithAddress1 = usersWithAddress[i];
+
+ if (usersWithAddress1.status===false){
+
+   let p = document.createElement('div')
+       p.classList.add('div')
+       document.body.append(p)
+
+    let ul = document.createElement('ul')
+         p.append(ul)
+            let li = document.createElement('li')
+
+    li.innerText =`id-${usersWithAddress1.id},  name-${usersWithAddress1.name}, age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}, street-${usersWithAddress1.address.street}, number-${usersWithAddress1.address.number}`
+            ul.append(li)
+  }
+}
+}}
+
 // let div=document.createElement('div')
 // div.classList.add('div')
 // document.body.append(div)
@@ -316,8 +355,8 @@
 
 // При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
 
-let p=document.querySelector('.inp')
-function me() {
-
-    p.classList.add('p')
-}
+// let p=document.querySelector('.inp')
+// function me() {
+//
+//     p.classList.add('p')
+// }
