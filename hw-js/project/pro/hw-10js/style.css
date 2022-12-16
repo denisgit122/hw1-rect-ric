@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+}
+.case{
+    width: auto;
+    background:radial-gradient(circle ,silver,darkgrey,darkgray);
+    height: 660px;
+
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width:auto;
+    /*display: flex;*/
+    flex-wrap: wrap;
+}
+.div1{
+    margin-bottom: 30px;
+    height: 100px;
+    /*padding-left: 200px;*/
+    width: 500px;
+    display: flex;
+    border: 1px solid black;
+    /*justify-content: space-between;*/
+}
+.idUs{
+    margin-top: 4px;
+    margin-left: 120px;
+}
+.name {
+    margin-top: 4px;
+    margin-left: 7px;
+}
+.href{
+    margin-top: 60px;
+    position: absolute;
+    margin-left: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+.box{
+
+    width: 1100px;
+    margin-left: 300px;
+    height: 600px;
+    border: 2px solid black;
+
+}
+.username{
+padding-left: 10px;
+
+}
+
+.div{
+    justify-content: space-around;
+    margin-top: 10px;
+    display:flex;
+    height: 60px;
+    width: 400px;
+    margin-left: 33%;
+    border: 1px solid blue;
+}
+.boxhead{
+    background:radial-gradient(circle ,silver,darkgrey,darkgray);
+    width: auto;
+    height: 1040px;
+
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 15px;
+}
+.divFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.addres{
+    height: 300px;
+    width: 170px;
+    border: 1px solid darkblue;
+
+    padding-left: 20px;
+    margin-top: 40px;
+
+}
+.boxForPhone{
+    display:flex;
+    flex-wrap: wrap;
+    width: 470px;
+    height: 150px;
+    border: 1px solid brown;
+    margin-top: 140px;
+
+}
+.photo{
+    margin-top: 15px;
+    width: 300px;
+    height: 25px;
+ }
+.web{
+    margin-top: 15px;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    margin-left: 270px;
+}
+.box{
+
+    width: 1100px;
+    margin-left: 300px;
+    height: 650px;
+    border: 2px solid black;
+
+}
+.active .box{
+transition: 1s;
+    height: 1000px;
+
+}
+.no .box{
+
+    height: 650px;
+
+}
+.username{
+    padding-left: 10px;
+
+}
+
+.div{
+    justify-content: space-around;
+    margin-top: 10px;
+    display:flex;
+    height: 60px;
+    width: 400px;
+    margin-left: 33%;
+    border: 1px solid blue;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 15px;
+}
+.divFlex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.addres{
+    height: 300px;
+    width: 170px;
+    border: 1px solid darkblue;
+
+    padding-left: 20px;
+    margin-top: 40px;
+
+}
+.boxForPhone{
+    width: 470px;
+    height: 50px;
+    border: 1px solid brown;
+    margin-top: 140px;
+
+}
+.email{
+    margin: 20px;
+}
+.but{
+    height: 40px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 40px;
+    /*margin-left: 430px;*/
+}
+
+.inp{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 524px;
+}
+.li{
+    height: 30px;
+    width: 530px;
+    margin-left: 330px ;
+    margin-top: 4px;
+    border: 1px solid silver;
+}
+.butPost{
+    height: 30px;
+    width: 200px;
+    margin-left: 450px;
+    margin-top: 40px;
+}
+
+
+
+.addBox{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+.boxId{
+    margin: 10px;
+    height: 50px;
+    width: 280px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.slide{
+    width: 298px;
+        height: 320px;
+    font-size: 20px;
+    /*display: flex;*/
+        border: 1px solid black;
+        margin: 30px auto;
+/*transform: scale(1.2);*/
+/*    transition: all1x ease;*/
+        overflow: hidden;
+}
+.back{
+    height: 300px;
+    width: 150px;
+    /*background: cornflowerblue;*/
+    position: absolute;
+
+    top: 50px;
+    /*left: 690px;*/
+}
+.headSlide{
+    height: auto;
+        width: 100%;
+
+    padding-top: 10px;
+        background:radial-gradient(circle ,silver,darkgrey,darkgray);
+}
+.headBox{
+    display: flex;
+    position:relative;
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+   width: 300px;
+    height: 700px;
+    left: 0;
+    text-shadow: 4px 2px 7px black;
+        transition: all ease 1s;
+}
+.next{
+    width: 150px;
+    height: 299px;
+    /*background: blue;*/
+    position: absolute;
+    /*left: 0px;*/
+    margin-left: 150px;
+    top: 60px;
+}
+.title{
+    height:auto ;
+    width: 280px;
+    margin: 10px;
+    border: 1px solid blue;
+    font-size: 20px;
+}
+.body{
+    margin: 5px;
+    margin-top: 18px;
+    height: auto;
+    width: 280px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-style: dashed ;
+    padding-left: 4px;
+}
+
+
+
+.headComBox{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.comen{
+    height: 300px;
+    width: 300px;
+background: darkgray;
+    border-style: double ;
+
+}
+
+.comenId{
+
+    padding-left: 80px;
+border-bottom:1px solid black;
+}
+.Emain{
+    width: 300px;
+    height: 50px;
+padding-top: 20px;
+    border-bottom: 1px solid black;
+}
+.a{
+
+    margin-left: 30px;
+}
+.back-page{
+    margin-left: 88%;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+.href2{
+position: absolute;
+    margin-left: 1300px;
+    margin-top: -40px;
+}
+
+
