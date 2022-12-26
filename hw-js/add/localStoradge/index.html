@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .img{
+        height: 200px;
+        width: 250px;
+    }
+    .res{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .h2{
+        margin-left: 130px;
+    }
+.basked{
+    height: 70px;
+    width: 100px;
+    margin-left: 1320px;
+    background: aliceblue;
+}
+.box{
+    width: 700px;
+    height: 300px;
+}
+</style>
+<body>
+
+<a href="fav.html"><img src="img.png" class="basked"></a>
+
+</body>
+<script>
+let item=JSON.parse(localStorage.getItem('favs'))||[]
+let res=document.createElement('div')
+res.classList.add('res')
+
+document.body.append(res)
+const arr=[
+  {prod:'milk', price:123, photo:'https://www.nahgenuss.at/mediabase/profiles/gallery/208_5056_941432.jpg',href:'milk.html'},
+  {prod:'jus', price:123,photo: 'img_3.png',href:'jus.html'},
+  {prod:'bread', price:123, photo: 'img_2.png',href:'bread.html'},
+    {prod: 'cheese',price: 123,photo:'img_4.png',href:'cheese.html' }
+]
+for (const arrElement of arr) {
+  console.log(arrElement);
+  let box=document.createElement('div')
+    box.classList.add('box')
+
+  let btn=document.createElement('button')
+  btn.innerText='show'
+  let h2=document.createElement('h2')
+    h2.classList.add('h2')
+  h2.innerText=`${arrElement.prod} ${arrElement.price}`
+  res.append(box)
+
+    let img=document.createElement('img')
+    img.classList.add('img')
+    img.src=arrElement.photo
+  box.append(h2,btn,img)
+
+
+btn.onclick=function () {
+  item.push(arrElement)
+  localStorage.setItem('favs',JSON.stringify(item))
+}
+}
+
+</script>
+</html>

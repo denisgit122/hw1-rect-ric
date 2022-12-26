@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    fetch(`https://jsonplaceholder.typicode.com/users`)
+    .then(value => value.json())
+    .then(foo=>{
+        for (const array of foo) {
+            let hre=document.createElement('a')
+            hre.innerText='mm,'
+            hre.href=`index2.html?id=${array.id}`
+
+            document.body.append(hre)
+        }
+
+    })
+</script>
+</html>

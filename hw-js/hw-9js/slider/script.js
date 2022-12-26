@@ -107,21 +107,37 @@
 let add=document.querySelector('.add')
 let back=document.querySelector('.slider-back')
 
+// let offset=0;
+// back.addEventListener('click',function () {
+//     offset=offset-500
+//     if (offset<0){
+//         offset=1000
+//     }
+//     add.style.left=-offset+'px'
+// })
+
 let offset=0;
-back.addEventListener('click',function () {
-    offset=offset-500
-    if (offset<0){
-        offset=1000
-    }
-    add.style.left=-offset+'px'
-})
+               const bac=function () {
+                    offset=offset-500
+                    if (offset<0){
+                        offset=1000
+                    }
+                    add.style.left=-offset+'px'
+                }
+                back.addEventListener('click',bac)
 
 let next=document.querySelector('.slider-next')
-next.addEventListener('click', function () {
+const nex= function () {
 
     offset=offset+500
     if (offset>1000){
         offset=0
     }
     add.style.left=-offset+'px'
-})
+}
+next.addEventListener('click',nex)
+                setInterval(()=>{
+                    nex()
+                },4000)
+
+
