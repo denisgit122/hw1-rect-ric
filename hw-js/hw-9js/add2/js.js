@@ -255,7 +255,6 @@ let check1=document.querySelector('.check')
 
 check1.onclick=function () {
     console.log('res');
-d
 
 for (let i = 0; i < usersWithAddress.length; i++) {
     const usersWithAddress1 = usersWithAddress[i];
@@ -275,7 +274,7 @@ for (let i = 0; i < usersWithAddress.length; i++) {
   }
 }
 }}
-
+//
 // let div=document.createElement('div')
 // div.classList.add('div')
 // document.body.append(div)
@@ -301,50 +300,50 @@ for (let i = 0; i < usersWithAddress.length; i++) {
 //     ul.append(li)
 // }
 // }
-//
-//
-// // 2й - оставляет старше 29 лет включительно
-// let box2=document.createElement('div')
-// box2.classList.add('box2','box')
-// let h2fil2=document.createElement('h2')
-// h2fil2.innerText='пользователи старше 29 лет включительно'
-// h2fil2.classList.add('h2fil2','h2')
-// div.append(box2)
-// box2.append(h2fil2)
-//
-// for (const usersWithAddress1 of usersWithAddress) {
-//
-//     if (usersWithAddress1.age>=29){
-//         console.log( usersWithAddress1)
-//         let ul2=document.createElement('ul')
-//         box2.append(ul2)
-//         let li2=document.createElement('li')
-//         li2.innerText=`id-${usersWithAddress1.id},  name-${usersWithAddress1.name}, age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}, street-${usersWithAddress1.address.street}, number-${usersWithAddress1.address.number}`
-//         ul2.append(li2)
-//     }
-// }
-// // 3й - оставляет тех у кого город киев
-//
-//
-// let box3=document.createElement('div')
-// box3.classList.add('box3','box')
-// let h3fil3=document.createElement('h2')
-// h3fil3.innerText='пользователи у кого город киев'
-// h3fil3.classList.add('h3fil3','h2')
-// div.append(box3)
-// box3.append(h3fil3)
-//
-// for (const usersWithAddress1 of usersWithAddress) {
-//
-//     if (usersWithAddress1.address.city=='Kyiv'){
-//         console.log( usersWithAddress1)
-//         let ul3=document.createElement('ul')
-//         box3.append(ul3)
-//         let li3=document.createElement('li')
-//         li3.innerText=`id-${usersWithAddress1.id},  name-${usersWithAddress1.name}, age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}, street-${usersWithAddress1.address.street}, number-${usersWithAddress1.address.number}`
-//         ul3.append(li3)
-//     }
-// }
+
+
+// 2й - оставляет старше 29 лет включительно
+let box2=document.createElement('div')
+box2.classList.add('box2','box')
+let h2fil2=document.createElement('h2')
+h2fil2.innerText='пользователи старше 29 лет включительно'
+h2fil2.classList.add('h2fil2','h2')
+div.append(box2)
+box2.append(h2fil2)
+
+for (const usersWithAddress1 of usersWithAddress) {
+
+    if (usersWithAddress1.age>=29){
+        console.log( usersWithAddress1)
+        let ul2=document.createElement('ul')
+        box2.append(ul2)
+        let li2=document.createElement('li')
+        li2.innerText=`id-${usersWithAddress1.id},  name-${usersWithAddress1.name}, age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}, street-${usersWithAddress1.address.street}, number-${usersWithAddress1.address.number}`
+        ul2.append(li2)
+    }
+}
+// 3й - оставляет тех у кого город киев
+
+
+let box3=document.createElement('div')
+box3.classList.add('box3','box')
+let h3fil3=document.createElement('h2')
+h3fil3.innerText='пользователи у кого город киев'
+h3fil3.classList.add('h3fil3','h2')
+div.append(box3)
+box3.append(h3fil3)
+
+for (const usersWithAddress1 of usersWithAddress) {
+
+    if (usersWithAddress1.address.city=='Kyiv'){
+        console.log( usersWithAddress1)
+        let ul3=document.createElement('ul')
+        box3.append(ul3)
+        let li3=document.createElement('li')
+        li3.innerText=`id-${usersWithAddress1.id},  name-${usersWithAddress1.name}, age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}, street-${usersWithAddress1.address.street}, number-${usersWithAddress1.address.number}`
+        ul3.append(li3)
+    }
+}
 // Данные выводить в документ
 
 
