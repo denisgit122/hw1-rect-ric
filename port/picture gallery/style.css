@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'sans-serif';
+    overflow: hidden;
+    margin: 0;
+    background: darkslategrey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-1 {
+
+    background-image: url('https://media.istockphoto.com/id/1408827514/es/foto/isla-de-burano-el-colorido-pueblo-de-pescadores-tradicional-cerca-de-venecia-italia.jpg?s=1024x1024&w=is&k=20&c=snAmxQ6G_wzFO6hbL-20FzopxkXG-a3f705KHm308HY=');
+}
+.slide-2{
+    background-image: url("https://media.istockphoto.com/id/1412518567/es/foto/el-hist%C3%B3rico-barrio-de-delfshaven-con-molino-de-viento-en-rotterdam-pa%C3%ADses-bajos-regi%C3%B3n-de.jpg?s=612x612&w=0&k=20&c=KO2rQ65bpTxmAJaZSjRjZ0H1Ei1BRTvoV7VCNodt9n8=");
+}
+.slide-3{
+    background-image: url("https://media.istockphoto.com/id/1185264612/es/foto/vista-a%C3%A9rea-de-la-playa-de-patong-con-agua-de-mar-azul-turquesa-colinas-de-monta%C3%B1a-y-%C3%A1rboles.jpg?s=612x612&w=0&k=20&c=66H_SrzumOp8nLyHFOXN594X5Yh005P7boOzjhbD-n8=");
+}
+.slide-4{
+    background-image: url("https://media.istockphoto.com/id/1239162175/es/foto/vista-del-complejo-de-varenna-y-jard%C3%ADn-ornamental-florido-lago-como-italia.jpg?s=612x612&w=0&k=20&c=J4AGPr5tH6EZDnvjV5v_tGsWh1zlfrSXKTGw9RdDDRM=");
+}
+.slide-5{
+    background-image: url("https://media.istockphoto.com/id/1383849263/es/foto/canal-dotonbori-al-atardecer-osaka-jap%C3%B3n.jpg?s=612x612&w=0&k=20&c=2M93wxGy93RCv0Zdm8XeCPpYDW5TsGWa39hj2dNuoiI=");
+}
+.container{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+.slide{
+height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer; /*ДЛЯ ТОГО щоб коли наводимо на слайд показувало що ми працюємо з цим елементом*/
+    color: #ffff;
+    flex: 1;/*щоб кожний елемент розтягувався пропорцінйно*/
+    background-size: cover;/* Масштабує фонове зображення якомога більше, щоб охопити всю фонову область.*/
+    background-position:center ;
+    background-repeat:no-repeat ;
+position: relative;
+    transition: all 700ms ease-in-out;
+}
+.slide h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;/*встановлює рівень непрозорості для елемента.Рівень непрозорості описує рівень прозорості, де 1 взагалі не прозорий, 0,5 — 50% прозорості, а 0 — повністю прозорий.*/
+
+
+}
+.slide.active{
+    flex: 12;
+
+}
+.slide.active h3{
+    opacity: 1;
+    transition:opacity 0.3s ease-in 0.4s; /* ease-in----коли речі виїжджають повільно на початку, швидко/різко в кінці */
+}
+
+

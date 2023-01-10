@@ -4,62 +4,50 @@
 // - кількість товару
 // - ціна товару
 // - картинка товару (посилання з інтернету)
-let item=JSON.parse(localStorage.getItem('int'))||[]
-let phot=JSON.parse(localStorage.getItem('photo'))||[]
 
-let arr=[]
 
-console.log(arr);
+let item=JSON.parse(localStorage.getItem('favs'))||[]
+console.log(item);
+const btn=document.createElement('button')
+btn.classList.add('btn')
+
+btn.innerText='save'
+
 const inpNam=document.createElement('input')
 inpNam.type='text'
-const but2=document.createElement('button')
-but2.innerText='werr'
 
+const inpImg=document.createElement('input')
+inpImg.type='text'
 
-        let photo=[]
-        const inpPhot=document.createElement('input')
-        inpPhot.type='text'
+const inpPrice=document.createElement('input')
+inpPrice.type='text'
 
-
-but2.addEventListener('click',function () {
-
-
-
-
-
-
-    inpPhot.oninput
-    const resPhot=inpPhot.value
-    let ar=new Array()
-    ar.push(resPhot)
-    phot.push(ar)
-    localStorage.setItem('inpPhot',JSON.stringify(phot))
-
+btn.addEventListener('click',function () {
     inpNam.oninput
-    const res= inpNam.value
-    ar.push(res)
-    console.log(arr);
-        item.push(ar)
-        localStorage.setItem('inpPhot',JSON.stringify(phot))
+    const res2= inpNam.value
+
+    inpImg.oninput
+    let rs3=inpImg.value
+
+    inpPrice.oninput
+    const pricer = inpPrice.value
 
 
+    let res={res2,rs3,pricer}
 
-
-
-
-
+    item.push(res)
+    localStorage.setItem('favs',JSON.stringify(item))
 })
 
+document.body.append(inpNam,inpImg,inpPrice,btn)
 
-
-
-
-
-document.body.append(inpNam, inpPhot,but2,)
-
-
-
-
+const href=document.createElement('button')
+href.classList.add('href')
+const a=document.createElement('a')
+a.href='local.html'
+a.innerText='page'
+document.body.append(href)
+href.append(a)
 
 
 

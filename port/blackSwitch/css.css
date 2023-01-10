@@ -1,0 +1,21 @@
+ html.dark, body.dark{
+     background: linear-gradient(118.38deg, #29323C -4.6%, #485563 200.44%);
+     color:white;
+}
+ html,body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /*background: silver;*/
+     }
+ .dark .conteiner{
+
+     background: darkgray;
+
+
+
+ }
+ .conteiner{
+     width: 800px;
+     height: 1000px;
+ }
