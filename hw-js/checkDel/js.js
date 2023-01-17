@@ -29,55 +29,78 @@ document.body.append(headDiv)
 
 
 // 1й - отфильтровывает пользователей со статусом false (осталяет со статусом false)
-for (const usersWithAddress1 of usersWithAddress) {
-    const filOne=document.createElement('div')
-    filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}  `
-    res1.append(filOne)
+// for (const usersWithAddress1 of usersWithAddress) {
+//     const filOne=document.createElement('div')
+//     filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}  `
+//     res1.append(filOne)
+//
+// inpOne.addEventListener('click',function () {
+//     if (inpOne.checked===true){
+//         if (usersWithAddress1.status===true){
+//             filOne.innerText=''}
+// }else if (inpTw.checked===true){
+//         if (usersWithAddress1.age<29)
+//         {filOne.innerText=''}
+//     } else if (inpOne.checked!==true) { filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}  `}
+// })
+//
+//
+//     inpTw.addEventListener('click',function (){
+//         if (inpTw.checked===true){
+//             if (usersWithAddress1.age<29){
+//                 filOne.innerText=''
+//             }else if (usersWithAddress1.age>29){
+//                 console.log('dont have');}
+//         }else if (inpOne.checked===true){
+//             if (usersWithAddress1.status===false)
+//             {filOne.innerText=''}
+//         }
+//
+//         else if (inpTw.checked!==true) { filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}  `}
+//     })
+//
+// inpTh.addEventListener('click',function () {
+//     if (inpTh.checked===true){
+//         if (usersWithAddress1.address.city!='Kyiv'){
+//             filOne.innerText=''
+//         }else if (usersWithAddress1.address.city='Kyiv'){console.log('dont have')}
+//     }else if (inpTw.checked===true) {
+//         if (usersWithAddress1.age < 29) {
+//             filOne.innerText = ''
+//         }
+//     }else if (inpOne.checked === true) {
+//         if (usersWithAddress1.status === true) {
+//             filOne.innerText = ''
+//         }
+//     }else if (inpTh.checked!==true) {filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}`}
+//
+// })
+//     }
 
-inpOne.addEventListener('click',function () {
-    if (inpOne.checked===true){
-        if (usersWithAddress1.status===true){
-            filOne.innerText=''}
-}else if (inpTw.checked===true){
-        if (usersWithAddress1.age<29)
-        {filOne.innerText=''}
-    } else if (inpOne.checked!==true) { filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}  `}
-})
-  
-
-    inpTw.addEventListener('click',function (){
-        if (inpTw.checked===true){
-            if (usersWithAddress1.age<29){
-                filOne.innerText=''
-            }else if (usersWithAddress1.age>29){
-                console.log('dont have');}
-        }else if (inpOne.checked===true){
-            if (usersWithAddress1.status===false)
-            {filOne.innerText=''}
-        }
-
-        else if (inpTw.checked!==true) { filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}  `}
-    })
-
-inpTh.addEventListener('click',function () {
-    if (inpTh.checked===true){
-        if (usersWithAddress1.address.city!='Kyiv'){
-            filOne.innerText=''
-        }else if (usersWithAddress1.address.city='Kyiv'){console.log('dont have')}
-    }else if (inpTw.checked===true) {
-        if (usersWithAddress1.age < 29) {
-            filOne.innerText = ''
-        }
-    }else if (inpOne.checked === true) {
-        if (usersWithAddress1.status === true) {
-            filOne.innerText = ''
-        }
-    }else if (inpTh.checked!==true) {filOne.innerText=`id-${usersWithAddress1.id}, name-${usersWithAddress1.name} age-${usersWithAddress1.age}, status-${usersWithAddress1.status}, city-${usersWithAddress1.address.city}`}
-
-})
-    }
+for (const user of usersWithAddress) {
+    const box = document.createElement('div')
+    box.innerText = `id-${user.id}, name-${user.name} age-${user.age}, status-${user.status}, city-${user.address.city}  `
+    headDiv.append(box)
 
 
+
+
+     inpOne.addEventListener('click',function () {
+         if (inpOne.checked===true ){
+             if (user.status===true ){
+                 box.innerText=''
+             }
+             }
+         
+     })
+
+
+   //  inpTw.addEventListener('click',function (){
+   //     if (inpTw.checked===true){
+   //         if (user.age<29){box.innerText=''}
+   //     }
+   // })
+}
 
 
 // 2й - оставляет старше 29 лет включительно
